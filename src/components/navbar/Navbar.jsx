@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import './navbar.css';
 import {RiBarChartHorizontalLine , RiCloseLine} from 'react-icons/ri';
+
 import logo from  '../../assets/logo.svg';
+import { Link } from 'react-router-dom';
 
 
 const Menu =()=>(<>
-  <p><a href="#">home</a></p>
+  <p><a href="#home">home</a></p>
   <p><a href="#wgpt">what is gpt?</a></p>
   <p><a href="#possibility">open ai </a></p>
   <p><a href="#features">case studies</a></p>
@@ -27,12 +29,18 @@ function Navbar() {
           <img src={logo} alt="logo" />
         </div>
 
-        <div className="gpt__navbar-links_container">  <Menu/>  </div>
+        <div className="gpt__navbar-links_container">
+           
+         <Menu/>
+
+        </div>
 
 
         <div className="gpt__navbar-links_sign">
-        <p>singin</p>
-        <button type='button'> signup</button>
+        <p><Link to='signin'>signin</Link></p>
+        <li><Link to='signup'>signup</Link></li>
+        
+  
         </div>
 
 
@@ -50,8 +58,8 @@ function Navbar() {
 
             <div className="gpt__navbar-menu_container-links-sign">
 
-              <p>singin</p>
-              <button type='button'> signup</button>
+              <p><Link to='signin'>signin</Link></p>
+              <li><Link to='signup'>signup</Link></li>
               </div>
 
             </div>

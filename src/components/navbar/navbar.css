@@ -39,6 +39,7 @@
     
 }
 
+
 .gpt__navbar-links_container p ,
 .gpt__navbar-links_sign p ,
 .gpt__navbar-menu_container p {
@@ -54,8 +55,12 @@
     cursor: pointer;
 }
 
-.gpt__navbar-links_sign button,
-.gpt__navbar-menu_container button {
+li{
+    list-style: none;
+}
+
+.gpt__navbar-links_sign li,
+.gpt__navbar-menu_container li {
     padding: 0.5rem 1rem;
     color: #fff;
     background: #FF4820;
